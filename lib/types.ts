@@ -1,7 +1,7 @@
 
 import { JSXElement } from 'solid-js';
 import type { SweetAlertIcon, SweetAlertOptions, SweetAlertResult } from 'sweetalert2'
-import Swal from 'sweetalert2';
+import type Swal from 'sweetalert2';
 
 export type SweetAlert2 = typeof Swal;
 export type ParamsType = { [key: string]: any };
