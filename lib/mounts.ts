@@ -35,6 +35,6 @@ export const mounts = [
     },
     {
       key: "loaderHtml",
-      getter: (swal: SweetAlert2) => swal.getLoader(),
+      getter: (swal: any) => swal.getLoader(),
     },
   ];
