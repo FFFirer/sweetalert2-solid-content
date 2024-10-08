@@ -25,7 +25,7 @@ export default defineConfig({
         },
         copyPublicDir: false,
         rollupOptions: {
-            external: ['solid-js', 'solid-js/store', 'solid-js/universal', 'solid-js/web', 'solid-js/jsx-runtime']
+            external: ['solid-js', 'solid-js/store', 'solid-js/universal', 'solid-js/web', 'solid-js/jsx-runtime', 'sweetalert2']
         },
     },
     resolve: {
