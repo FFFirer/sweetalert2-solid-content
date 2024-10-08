@@ -1,41 +1,40 @@
-import { SwalType } from "./types";
+import { SweetAlert2 } from "./types";
 
 export const mounts = [
     {
       key: "title",
-      getter: (swal: SwalType) => swal.getTitle(),
+      getter: (swal: SweetAlert2) => swal.getTitle(),
     },
     {
       key: "html",
-      getter: (swal: SwalType) => swal.getHtmlContainer(),
+      getter: (swal: SweetAlert2) => swal.getHtmlContainer(),
     },
     {
       key: "confirmButtonText",
-      getter: (swal: SwalType) => swal.getConfirmButton(),
+      getter: (swal: SweetAlert2) => swal.getConfirmButton(),
     },
     {
       key: "denyButtonText",
-      getter: (swal: SwalType) => swal.getDenyButton(),
+      getter: (swal: SweetAlert2) => swal.getDenyButton(),
     },
     {
       key: "cancelButtonText",
-      getter: (swal: SwalType) => swal.getCancelButton(),
+      getter: (swal: SweetAlert2) => swal.getCancelButton(),
     },
     {
       key: "footer",
-      getter: (swal: SwalType) => swal.getFooter(),
+      getter: (swal: SweetAlert2) => swal.getFooter(),
     },
     {
       key: "closeButtonHtml",
-      getter: (swal: SwalType) => swal.getCloseButton(),
+      getter: (swal: SweetAlert2) => swal.getCloseButton(),
     },
     {
       key: "iconHtml",
-      getter: (swal: SwalType) => swal.getIconContent(),
+      getter: (swal: SweetAlert2) => swal.getIconContent(),
     },
     {
       key: "loaderHtml",
-      getter: (swal: SwalType) => swal.getLoader(),
+      getter: (swal: SweetAlert2) => swal.getLoader(),
     },
   ];
-  

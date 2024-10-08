@@ -1,6 +1,6 @@
 {
     "name": "sweetalert2-solid-content",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "",
     "scripts": {
         "start": "vite",
@@ -20,7 +20,8 @@
         "vite-plugin-solid": "^2.8.2"
     },
     "peerDependencies": {
-        "solid-js": "^1.8.11"
+        "solid-js": "^1.8.11",
+        "sweetalert2": "^11.14.2"
     },
     "main": "dist/sweetalert2-solid-content.mjs",
     "types": "dist/index.d.ts",

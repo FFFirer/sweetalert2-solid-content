@@ -1,10 +1,10 @@
 import { render } from "solid-js/web";
 import { mounts } from "./mounts";
-import { ParamsType, SwalType } from "./types";
+import { ParamsType, SolidSweetAlert, SweetAlert2 } from "./types";
 
 const noop = () => {}; // eslint-disable-line @typescript-eslint/no-empty-function
 
-const withSolidContent = (ParentSwal: SwalType) => {
+const withSolidContent = (ParentSwal: SweetAlert2) : SweetAlert2 & SolidSweetAlert => {
   function extractSolidParams(params: any) {
     const solidParams: ParamsType = {};
     const otherParams: ParamsType = {};
@@ -22,7 +22,7 @@ const withSolidContent = (ParentSwal: SwalType) => {
     return [solidParams, otherParams];
   }
 
-  function render2(swal: SwalType, solidParams: ParamsType) {
+  function render2(swal: SweetAlert2, solidParams: ParamsType) {
     Object.entries(solidParams).forEach(([key, value]) => {
       const mount = mounts.find((mount) => mount.key === key);
       const domElement = mount!.getter(ParentSwal);
@@ -36,7 +36,7 @@ const withSolidContent = (ParentSwal: SwalType) => {
     });
   }
 
-  function unrender(swal: SwalType) {
+  function unrender(swal: SweetAlert2) {
     swal.__roots.forEach((root: any) => {
       root?.();
     });
